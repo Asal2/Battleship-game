@@ -1,0 +1,72 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+.firstpage {
+  margin: 20%;
+  text-align: center;
+  background-color: azure;
+  background-image: url(../images/backgroupimg.jpg);
+}
+.playgame {
+  background-color: bisque;
+}
+#divd {
+  text-align: center;
+  font-size: 25px;
+}
+#exampletable {
+  margin-left: auto;
+  margin-right: auto;
+}
+#divStyle {
+  font-size: 25px;
+  color: antiquewhite;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+table td,
+th {
+  border: 1px solid black;
+}
+
+.Submarine {
+  background-image: url("../images/submarine.jpg");
+  background-size: 5px 25px;
+}
+.Battleship {
+  background-image: url("../images/battleship.jpg");
+  background-size: 5px 25px;
+}
+
+.Cruiser {
+  background-image: url("../images/cruiser.jpg");
+  background-size: 5px 25px;
+}
+
+.Destroyer {
+  background-image: url("../images/destroyer.jpg");
+  background-size: 5px 25px;
+}
+
+.vessel {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 90px;
+  width: 150px;
+  margin: 0px 12px;
+  text-align: center;
+  color: #ffffff;
+  
+}
+
+.missed {
+  background-image: url("../images/Ocean.jpeg");
+}
+
+.table-width {
+  width: 1000px;
+}

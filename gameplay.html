@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="playgame">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <title>PlayGame</title>
+  </head>
+  <body>
+    <div id="divd">
+      <h3>BattleShip</h3>
+    </div>
+    <div id="userid"></div>
+    <div id="message"></div>
+    <div>
+      <button id="reset-el">Reset</button>
+    </div>
+    <div id="examplediv">
+      <table id="exampletable" class="table-width">
+        <tr>
+          <th>#</th>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>D</th>
+          <th>E</th>
+          <th>F</th>
+          <th>G</th>
+          <th>H</th>
+          <th>I</th>
+          <th>J</th>
+        </tr>
+        <tr>
+          <th>0</th>
+          <td id="0-0" data-codinates="A0" class="vessel"></td>
+          <td id="0-1" data-codinates="A1" class="vessel"></td>
+          <td id="0-2" data-codinates="A2" class="vessel"></td>
+          <td id="0-3" data-codinates="A3" class="vessel"></td>
+          <td id="0-4" data-codinates="A4" class="vessel"></td>
+          <td id="0-5" data-codinates="A5" class="vessel"></td>
+          <td id="0-6" data-codinates="A6" class="vessel"></td>
+          <td id="0-7" data-codinates="A7" class="vessel"></td>
+          <td id="0-8" data-codinates="A8" class="vessel"></td>
+          <td id="0-9" data-codinates="A9" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td id="1-0" data-codinates="B0" class="vessel"></td>
+          <td id="1-1" data-codinates="B1" class="vessel"></td>
+          <td id="1-2" data-codinates="B2" class="vessel"></td>
+          <td id="1-3" data-codinates="B3" class="vessel"></td>
+          <td id="1-4" data-codinates="B4" class="vessel"></td>
+          <td id="1-5" data-codinates="B5" class="vessel"></td>
+          <td id="1-6" data-codinates="B6" class="vessel"></td>
+          <td id="1-7" data-codinates="B7" class="vessel"></td>
+          <td id="1-8" data-codinates="B8" class="vessel"></td>
+          <td id="1-9" data-codinates="B9" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td id="2-0" data-codinates="A0" class="vessel"></td>
+          <td id="2-1" data-codinates="A0" class="vessel"></td>
+          <td id="2-2" data-codinates="A0" class="vessel"></td>
+          <td id="2-3" data-codinates="A0" class="vessel"></td>
+          <td id="2-4" data-codinates="A0" class="vessel"></td>
+          <td id="2-5" data-codinates="A0" class="vessel"></td>
+          <td id="2-6" data-codinates="A0" class="vessel"></td>
+          <td id="2-7" data-codinates="A0" class="vessel"></td>
+          <td id="2-8" data-codinates="A0" class="vessel"></td>
+          <td id="2-9" data-codinates="A0" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td id="3-0" data-codinates="A0" class="vessel"></td>
+          <td id="3-1" data-codinates="A0" class="vessel"></td>
+          <td id="3-2" data-codinates="A0" class="vessel"></td>
+          <td id="3-3" data-codinates="A0" class="vessel"></td>
+          <td id="3-4" data-codinates="A0" class="vessel"></td>
+          <td id="3-5" data-codinates="A0" class="vessel"></td>
+          <td id="3-6" data-codinates="A0" class="vessel"></td>
+          <td id="3-7" data-codinates="A0" class="vessel"></td>
+          <td id="3-8" data-codinates="A0" class="vessel"></td>
+          <td id="3-9" data-codinates="A0" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td id="4-0" data-codinates="A0" class="vessel"></td>
+          <td id="4-1" data-codinates="A0" class="vessel"></td>
+          <td id="4-2" data-codinates="A0" class="vessel"></td>
+          <td id="4-3" data-codinates="A0" class="vessel"></td>
+          <td id="4-4" data-codinates="A0" class="vessel"></td>
+          <td id="4-5" data-codinates="A0" class="vessel"></td>
+          <td id="4-6" data-codinates="A0" class="vessel"></td>
+          <td id="4-7" data-codinates="A0" class="vessel"></td>
+          <td id="4-8" data-codinates="A0" class="vessel"></td>
+          <td id="4-9" data-codinates="A0" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td id="5-0" data-codinates="A0" class="vessel"></td>
+          <td id="5-1" data-codinates="A0" class="vessel"></td>
+          <td id="5-2" data-codinates="A0" class="vessel"></td>
+          <td id="5-3" data-codinates="A0" class="vessel"></td>
+          <td id="5-4" data-codinates="A0" class="vessel"></td>
+          <td id="5-5" data-codinates="A0" class="vessel"></td>
+          <td id="5-6" data-codinates="A0" class="vessel"></td>
+          <td id="5-7" data-codinates="A0" class="vessel"></td>
+          <td id="5-8" data-codinates="A0" class="vessel"></td>
+          <td id="5-9" data-codinates="A0" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td id="6-0" data-codinates="A0" class="vessel"></td>
+          <td id="6-1" data-codinates="A0" class="vessel"></td>
+          <td id="6-2" data-codinates="A0" class="vessel"></td>
+          <td id="6-3" data-codinates="A0" class="vessel"></td>
+          <td id="6-4" data-codinates="A0" class="vessel"></td>
+          <td id="6-5" data-codinates="A0" class="vessel"></td>
+          <td id="6-6" data-codinates="A0" class="vessel"></td>
+          <td id="6-7" data-codinates="A0" class="vessel"></td>
+          <td id="6-8" data-codinates="A0" class="vessel"></td>
+          <td id="6-9" data-codinates="A0" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td id="7-0" data-codinates="A0" class="vessel"></td>
+          <td id="7-1" data-codinates="A0" class="vessel"></td>
+          <td id="7-2" data-codinates="A0" class="vessel"></td>
+          <td id="7-3" data-codinates="A0" class="vessel"></td>
+          <td id="7-4" data-codinates="A0" class="vessel"></td>
+          <td id="7-5" data-codinates="A0" class="vessel"></td>
+          <td id="7-6" data-codinates="A0" class="vessel"></td>
+          <td id="7-7" data-codinates="A0" class="vessel"></td>
+          <td id="7-8" data-codinates="A0" class="vessel"></td>
+          <td id="7-9" data-codinates="A0" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td id="8-0" data-codinates="A0" class="vessel"></td>
+          <td id="8-1" data-codinates="A0" class="vessel"></td>
+          <td id="8-2" data-codinates="A0" class="vessel"></td>
+          <td id="8-3" data-codinates="A0" class="vessel"></td>
+          <td id="8-4" data-codinates="A0" class="vessel"></td>
+          <td id="8-5" data-codinates="A0" class="vessel"></td>
+          <td id="8-6" data-codinates="A0" class="vessel"></td>
+          <td id="8-7" data-codinates="A0" class="vessel"></td>
+          <td id="8-8" data-codinates="A0" class="vessel"></td>
+          <td id="8-9" data-codinates="A0" class="vessel"></td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td id="9-0" data-codinates="A0" class="vessel"></td>
+          <td id="9-1" data-codinates="A0" class="vessel"></td>
+          <td id="9-2" data-codinates="A0" class="vessel"></td>
+          <td id="9-3" data-codinates="A0" class="vessel"></td>
+          <td id="9-4" data-codinates="A0" class="vessel"></td>
+          <td id="9-5" data-codinates="A0" class="vessel"></td>
+          <td id="9-6" data-codinates="A0" class="vessel"></td>
+          <td id="9-7" data-codinates="A0" class="vessel"></td>
+          <td id="9-8" data-codinates="A0" class="vessel"></td>
+          <td id="9-9" data-codinates="A0" class="vessel"></td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="assets/js/models.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/listeners.js"></script>
+    <script type="text/javascript" src="assets/js/view.js"></script>
+  </body>
+</html>
